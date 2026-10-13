@@ -45,4 +45,11 @@ jobs:
           git config user.name "trade-desk-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs alerts_state.json
-          git diff --cached --quiet || (git commit -m "Scan $(date -u +%Y-%m-%dT%H:%MZ)" && git push)
+          if git diff --cached --quiet; then echo "Nothing to save"; exit 0; fi
+          git commit -m "Scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Pull in any commits made while the scan ran (for example your own edits), then push.
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            echo "Push attempt $i failed, retrying..."; sleep 5
+          done
+          exit 1
