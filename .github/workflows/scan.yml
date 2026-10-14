@@ -40,16 +40,42 @@ jobs:
           python trade_desk.py $FLAG --detail --out docs/index.html \
             --equity "${EQUITY:-25000}" --state alerts_state.json
 
+     
       - name: Save results
         run: |
           git config user.name "trade-desk-bot"
           git config user.email "bot@users.noreply.github.com"
+
+          # Stage only the intended scan outputs
           git add docs alerts_state.json
-          if git diff --cached --quiet; then echo "Nothing to save"; exit 0; fi
+
+          if git diff --cached --quiet; then
+            echo "Nothing to save"
+            exit 0
+          fi
+
           git commit -m "Scan $(date -u +%Y-%m-%dT%H:%MZ)"
-          # Pull in any commits made while the scan ran (for example your own edits), then push.
+
+          # Stash unrelated uncommitted changes
+          git stash push --include-untracked -m "temporary scan changes"
+
+          # Retry synchronization if another run updated main
           for i in 1 2 3; do
-            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
-            echo "Push attempt $i failed, retrying..."; sleep 5
+            if git pull --rebase -X theirs origin main; then
+              if git push origin HEAD:main; then
+                echo "Scan results saved successfully"
+                exit 0
+              fi
+            fi
+
+            # Stop rather than retry in a conflicted state
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then
+              git rebase --abort
+            fi
+
+            echo "Push attempt $i failed, retrying..."
+            sleep 5
           done
+
+          echo "Failed to save scan results"
           exit 1
