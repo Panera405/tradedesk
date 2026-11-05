@@ -1,21 +1,9 @@
 {
- "2026-11-04|MSFT|1|Breakout + retest": "10:55",
- "2026-11-04|KO|1|Breakout + retest": "10:55",
- "2026-11-04|ORCL|-1|Double top": "10:55",
- "2026-11-04|AVGO|-1|Resistance rejection (zone)": "10:55",
- "2026-11-04|IBM|1|Support bounce (zone)": "10:55",
- "2026-11-04|PFE|1|Relative-strength continuation": "10:55",
- "2026-11-04|XOM|1|Double bottom": "10:55",
- "2026-11-04|AAPL|1|Support bounce (zone)": "10:55",
- "2026-11-04|CSCO|-1|Resistance rejection (zone)": "10:55",
- "2026-11-04|ACN|1|Support bounce (zone)": "11:56",
- "2026-11-04|TMO|1|Cup and handle": "11:56",
- "2026-11-04|IBM|1|Cup and handle": "12:53",
- "2026-11-04|MSFT|1|Gap support bounce": "12:53",
- "2026-11-04|AAPL|1|Breakout + retest": "13:56",
- "2026-11-04|PFE|1|Breakout + retest": "13:56",
- "2026-11-04|GS|-1|Resistance rejection (20/50 EMA)": "14:57",
- "2026-11-04|AAPL|1|Cup and handle": "15:53",
- "2026-11-04|BAC|-1|Resistance rejection (20/50 EMA)": "15:53",
- "2026-11-04|CVX|1|Cup and handle": "15:53"
+ "2026-11-05|PFE|1|Breakout + retest": "10:59",
+ "2026-11-05|ORCL|-1|Inverted cup and handle": "10:59",
+ "2026-11-05|MSFT|1|Cup and handle": "10:59",
+ "2026-11-05|GS|-1|Resistance rejection (zone)": "10:59",
+ "2026-11-05|AAPL|1|Cup and handle": "10:59",
+ "2026-11-05|JNJ|1|Cup and handle": "10:59",
+ "2026-11-05|ABBV|1|Breakout + retest": "10:59"
 }
