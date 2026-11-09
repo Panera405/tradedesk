@@ -1,12 +1,9 @@
 {
- "2026-11-06|ORCL|-1|Inverted cup and handle": "10:50",
- "2026-11-06|PG|1|Breakout + retest": "10:50",
- "2026-11-06|AAPL|1|20/50 EMA pullback": "10:50",
- "2026-11-06|MSFT|1|20/50 EMA pullback": "10:50",
- "2026-11-06|PFE|1|Double bottom": "10:50",
- "2026-11-06|MSFT|1|Cup and handle": "12:49",
- "2026-11-06|NFLX|-1|Inverted cup and handle": "12:49",
- "2026-11-06|TMO|1|Cup and handle": "12:49",
- "2026-11-06|PG|1|Cup and handle": "14:52",
- "2026-11-06|AMD|-1|Inverted cup and handle": "14:52"
+ "2026-11-09|ORCL|-1|Inverted cup and handle": "11:00",
+ "2026-11-09|PG|1|Cup and handle": "11:00",
+ "2026-11-09|BAC|-1|Resistance rejection (20/50 EMA)": "11:00",
+ "2026-11-09|AAPL|1|Cup and handle": "11:00",
+ "2026-11-09|TMO|1|Cup and handle": "11:00",
+ "2026-11-09|NFLX|-1|Resistance rejection (20/50 EMA)": "11:00",
+ "2026-11-09|MSFT|1|20/50 EMA pullback": "11:00"
 }
