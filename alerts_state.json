@@ -1,14 +1,10 @@
 {
- "2026-11-11|ACN|1|Bull flag": "10:52",
- "2026-11-11|AAPL|1|Cup and handle": "10:52",
- "2026-11-11|ORCL|-1|Double top": "10:52",
- "2026-11-11|NFLX|-1|Inverted cup and handle": "10:52",
- "2026-11-11|PG|1|Cup and handle": "10:52",
- "2026-11-11|TMO|1|Breakout + retest": "10:52",
- "2026-11-11|AAPL|1|Support bounce (zone)": "11:56",
- "2026-11-11|JNJ|1|Cup and handle": "11:56",
- "2026-11-11|TMO|1|Support bounce (zone)": "11:56",
- "2026-11-11|GOOGL|-1|Inverted cup and handle": "12:55",
- "2026-11-11|IBM|1|Cup and handle": "13:56",
- "2026-11-11|DIS|1|Cup and handle": "13:56"
+ "2026-11-12|NFLX|-1|Inverted cup and handle": "10:59",
+ "2026-11-12|ACN|1|Bull flag": "10:59",
+ "2026-11-12|IBM|1|20/50 EMA pullback": "10:59",
+ "2026-11-12|AAPL|1|Cup and handle": "10:59",
+ "2026-11-12|QCOM|1|Support bounce (zone)": "10:59",
+ "2026-11-12|PG|1|Cup and handle": "10:59",
+ "2026-11-12|TMO|1|20/50 EMA pullback": "10:59",
+ "2026-11-12|ORCL|-1|Double top": "10:59"
 }
